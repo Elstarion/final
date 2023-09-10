@@ -1,0 +1,71 @@
+.skills_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #101010;
+  color: #fff;
+
+  .skills_title {
+    text-align: center;
+    font-size: 3em;
+    margin: 1em 0;
+
+    @media (max-width: 768px) {
+      font-size: 2em;
+    }
+  }
+
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 2em;
+
+    .tech_card {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 100px;
+      border-radius: 1em;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .tech_image {
+      max-width: 250px;
+    }
+
+    .tech_name {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .tech_image {
+        max-width: 200px;
+        padding: 1em;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .tech_card {
+        padding: 5px;
+      }
+
+      .tech_image {
+        max-width: 100px;
+      }
+
+      .tech_name {
+        font-size: 1.5em;
+      }
+    }
+  }
+}

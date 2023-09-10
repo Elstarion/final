@@ -1,0 +1,347 @@
+@mixin break($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: "exocetH";
+  src: url("/src/assets/exocet/films.EXH.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "exocetL";
+  src: url("/src/assets/exocet/films.EXL.ttf") format("truetype");
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  max-width: 2600px;
+  margin: 0 auto;
+
+  .diablo_navbar {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      height: 0;
+    }
+
+    .link_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      width: 150px;
+      font-family: exocetL, sans-serif;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.35s ease-in-out;
+      background: url("../../assets/diablo/d4-frame-l.png"),
+        url("../../assets/diablo/d4-frame-r.png"),
+        url("../../assets/diablo/d4-frame-m.png"),
+        url("../../assets/diablo/d4-navbar-l.png"),
+        url("../../assets/diablo/d4-navbar-r.png"),
+        url("../../assets/diablo/d4-navbar-m.png");
+      background-repeat: no-repeat;
+      background-position: left center, right center, center center, 10px center,
+        calc(100% - 10px) center, center center;
+      background-size: auto 100%, auto 100%, auto 100%, auto calc(100% - 18px),
+        auto calc(100% - 18px), 82% calc(100% - 18px);
+
+      &:hover {
+        background: url("../../assets/diablo/d4-frame-l.png"),
+          url("../../assets/diablo/d4-frame-r.png"),
+          url("../../assets/diablo/d4-frame-m.png"),
+          url("../../assets/diablo/d4-navbar-l-hover.png"),
+          url("../../assets/diablo/d4-navbar-r-hover.png"),
+          url("../../assets/diablo/d4-navbar-m-hover.png");
+        background-repeat: no-repeat;
+        background-position: left center, right center, center center,
+          10px center, calc(100% - 10px) center, center center;
+        background-size: auto 100%, auto 100%, auto 100%, auto calc(100% - 18px),
+          auto calc(100% - 18px), 82% calc(100% - 18px);
+      }
+
+      @include break(576px) {
+        height: 50px;
+        width: 80px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1em;
+    }
+  }
+}
+
+.hero_section {
+  position: relative;
+  width: 100%;
+  max-width: 2600px;
+  margin: 0 auto;
+  .hero_image {
+    width: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  .logo {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 10;
+  }
+}
+
+.story_title {
+  font-family: exocetH, sans-serif;
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  margin: 1.5em 0;
+
+  @include break(576px) {
+    font-size: 3em;
+  }
+}
+
+.story {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  color: #fff;
+
+  .story_img {
+    width: 60%;
+    max-width: 1000px;
+    object-fit: cover;
+  }
+
+  .story_text {
+    font-family: exocetL, sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    max-width: 600px;
+    margin-bottom: 40px;
+
+    @include break(992px) {
+      font-size: 1em;
+    }
+  }
+
+  .cinematic_button {
+    display: flex;
+    height: 70px;
+    width: 9.125em;
+    background: url("../../assets/diablo/d4-button-l.png") left center no-repeat,
+      url("../../assets/diablo/d4-button-m.png") center center no-repeat,
+      url("../../assets/diablo/d4-button-r.png") right center no-repeat;
+    background-size: auto, auto, auto;
+    justify-content: center;
+    align-items: center;
+    font-family: exocetL, sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: background 0.35s ease-in-out;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &:hover {
+      background: url("../../assets/diablo/d4-button-l-hover.png") left center
+          no-repeat,
+        url("../../assets/diablo/d4-button-m-hover.png") center center no-repeat,
+        url("../../assets/diablo/d4-button-r-hover.png") right center no-repeat;
+
+      @include break(576px) {
+        background-size: 40px 70px, 90px 70px, 40px 70px;
+      }
+    }
+
+    @include break(1200px) {
+      margin: 0 auto;
+    }
+
+    @include break(576px) {
+      font-size: 1em;
+      background-size: 40px 70px, 90px 70px, 40px 70px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .story {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    .story_img {
+      width: 100%;
+    }
+    .story_text {
+      max-width: 1000px;
+    }
+  }
+}
+
+// --------------------------- slider ---------------------------
+
+.slider_controls {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  // gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+
+  @include break(768px) {
+    justify-content: space-around;
+  }
+}
+
+.class_icon,
+.class_icon_inactive {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  img {
+    width: 90px;
+    font-size: 1.3em;
+
+    @include break(470px) {
+      width: 40px;
+    }
+  }
+
+  span {
+    font-family: exocetH, sans-serif;
+
+    @include break(576px) {
+      font-size: 0.8em;
+    }
+
+    @include break(470px) {
+      font-size: 0.6em;
+    }
+  }
+}
+
+.class_icon {
+  opacity: 1;
+}
+
+.class_icon_inactive {
+  opacity: 0.5;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition-duration: all 1s;
+  margin-bottom: 100px;
+}
+
+.slide_background {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 10%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  z-index: 1;
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  opacity: 1;
+}
+
+.slide_hidden {
+  display: none;
+  flex: 0 0 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.class_description {
+  position: absolute;
+  bottom: 4em;
+  max-width: 1100px;
+  line-height: 1.4em;
+  color: #fff;
+  font-family: exocetL, sans-serif;
+  font-size: 1.2em;
+
+  @include break(576px) {
+    font-size: 0.65em;
+  }
+}
+
+.siege_section {
+  .siege_text {
+    font-family: exocetL, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+
+    @include break(576px) {
+      font-size: 1em;
+      width: 90%;
+    }
+  }
+
+  .siege_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 2600px;
+    }
+  }
+}

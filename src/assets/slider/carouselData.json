@@ -1,0 +1,39 @@
+{
+  "slides": [
+    {
+      "src": "src/assets/slider/barbarian-bg.png",
+      "class": "Barbarian",
+      "classIcon": "src/assets/slider/b-icon.png",
+      "classDescription": "The Barbarian has unparalleled strength and expertly wields an entire arsenal in battle, with a weapon for every occasion. He bellows intimidating war cries and unleashes ground-shaking slams to send approaching hordes reeling.",
+      "alt": "Barbarian"
+    },
+    {
+      "src": "src/assets/slider/druid-bg.png",
+      "class": "Druid",
+      "classIcon": "src/assets/slider/d-icon.png",
+      "classDescription": "The Druid is a savage shapeshifter, fluidly transforming between the forms of a towering bear or a vicious werewolf to fight alongside the creatures of the wild. He also commands the power of earth, wind, and storm, unleashing nature’s wrath to devastating effect.",
+      "alt": "Druid"
+    },
+    {
+      "src": "src/assets/slider/necromancer-bg.png",
+      "class": "Necromancer",
+      "classIcon": "src/assets/slider/n-icon.png",
+      "classDescription": "Necromancers are cunning summoners that conjure vengeful hordes of the undead. Their Essence flows into three powerful bastions of Bone, Blood, or Shadow to bring low their enemies.",
+      "alt": "Necromancer"
+    },
+    {
+      "src": "src/assets/slider/rogue-bg.png",
+      "class": "Rogue",
+      "classIcon": "src/assets/slider/r-icon.png",
+      "classDescription": "The Rogue is an adaptable, agile warrior who can specialize in ranged or close quarters combat. She can best any foe with her imbued weapons, perform powerful combo attacks, and can augment her arsenal with deadly poisons and shadow magic to slay demons with impunity.",
+      "alt": "Rogue"
+    },
+    {
+      "src": "src/assets/slider/sorc-bg.png",
+      "class": "Sorcerer",
+      "classIcon": "src/assets/slider/s-icon.png",
+      "classDescription": "The Sorcerer shapes the elements into whatever form is necessary to ensure victory, from hurling bolts of lightning, impaling her foes upon jagged spikes of ice, and raining flaming meteors down from the sky.",
+      "alt": "Sorcerer"
+    }
+  ]
+}
