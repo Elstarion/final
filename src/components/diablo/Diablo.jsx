@@ -12,7 +12,7 @@ const Diablo = () => {
           <div className={css.hero_section}>
             <img src="/src/assets/elias.png" className={css.hero_image} />
             <video
-              src="/src/assets/red-rose.mp4"
+              src="red-rose.mp4"
               autoPlay
               loop
               muted
