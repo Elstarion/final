@@ -9,73 +9,73 @@
     {
       "id": 2,
       "name": "Samsung Galaxy S23 Ultra",
-      "image": "/2.png",
+      "image": "2.png",
       "price": 1511.0
     },
     {
       "id": 3,
       "name": "Apple MacBook Pro 16'' M2",
-      "image": "/3.png",
+      "image": "3.png",
       "price": 3371.0
     },
     {
       "id": 4,
       "name": "MSI Pulse",
-      "image": "/4.png",
+      "image": "4.png",
       "price": 2545.88
     },
     {
       "id": 5,
       "name": "Super Size 50 Gallon Cowboy Hats",
-      "image": "/5.png",
+      "image": "5.png",
       "price": 21.02
     },
     {
       "id": 6,
       "name": "Skechers Shoes",
-      "image": "/6.png",
+      "image": "6.png",
       "price": 88.55
     },
     {
       "id": 7,
       "name": "Yamato Sword",
-      "image": "/7.png",
+      "image": "7.png",
       "price": 25000
     },
     {
       "id": 8,
       "name": "Just Learn",
-      "image": "/8.png",
+      "image": "8.png",
       "price": 39.99
     },
     {
       "id": 9,
       "name": "Outroad Fat Tire",
-      "image": "/9.png",
+      "image": "9.png",
       "price": 219.99
     },
     {
       "id": 10,
       "name": "There's No Place Like Home Sign",
-      "image": "/10.png",
+      "image": "10.png",
       "price": 540.0
     },
     {
       "id": 11,
       "name": "Multi -Screen Encoding Cabin Workstation",
-      "image": "/11.png",
+      "image": "11.png",
       "price": 11099.0
     },
     {
       "id": 12,
       "name": "Paul Stanley Replica Miniature Guitar",
-      "image": "/12.png",
+      "image": "12.png",
       "price": 18.95
     },
     {
       "id": 13,
       "name": "Papyrus Blank Thank You Card",
-      "image": "/13.png",
+      "image": "13.png",
       "price": 10.99
     }
   ]

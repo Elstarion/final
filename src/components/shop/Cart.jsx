@@ -50,7 +50,7 @@ const Cart = () => {
                 <span>Start shopping</span>
               </Link>
             </div>
-            <img src="/justdoit.png" alt="justdoit" className={css.justdoit} />
+            <img src="justdoit.png" alt="justdoit" className={css.justdoit} />
           </div>
         ) : (
           <div>
