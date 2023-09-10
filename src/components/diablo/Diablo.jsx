@@ -1,7 +1,7 @@
 import css from "./Diablo.module.scss";
 import DiabloNavbar from "./DiabloNavbar";
 import Slider from "./slider/Slider";
-import { slides } from "/src/assets/slider/carouselData.json";
+import { slides } from "../sliderData.json";
 
 const Diablo = () => {
   return (
@@ -10,25 +10,22 @@ const Diablo = () => {
         <DiabloNavbar />
         <section>
           <div className={css.hero_section}>
-            <img src="/src/assets/elias.png" className={css.hero_image} />
+            <img src="/elias.png" className={css.hero_image} />
             <video
-              src="red-rose.mp4"
+              src="/red-rose.mp4"
               autoPlay
               loop
               muted
               className={css.overlay}
             />
-            <img src="/src/assets/d4-logo.png" className={css.logo} />
+            <img src="/d4-logo.png" className={css.logo} />
           </div>
         </section>
 
         <section className={css.story_section}>
           <h2 className={css.story_title}>Story</h2>
           <div className={css.story}>
-            <img
-              src="/src/assets/inarius-lilith.jpg"
-              className={css.story_img}
-            />
+            <img src="/inarius-lilith.jpg" className={css.story_img} />
             <div>
               <p className={css.story_text}>
                 Seeking refuge from the eternal conflict between the High
@@ -65,7 +62,7 @@ const Diablo = () => {
               IV. Now it's your turn to join the crusade and take up arms
               against the enemies of the mortal realms.
             </p>
-            <img src="/src/assets/inariusvslilith.jpg" />
+            <img src="/inariusvslilith.jpg" />
           </div>
         </section>
       </div>

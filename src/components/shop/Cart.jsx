@@ -11,7 +11,6 @@ import {
   removeFromCart,
 } from "../../store/cartSlice";
 import { useEffect } from "react";
-import doit from "../../assets/justdoit.png";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -51,7 +50,7 @@ const Cart = () => {
                 <span>Start shopping</span>
               </Link>
             </div>
-            <img src={doit} alt="justdoit" className={css.justdoit} />
+            <img src="/justdoit.png" alt="justdoit" className={css.justdoit} />
           </div>
         ) : (
           <div>
