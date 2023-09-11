@@ -44,9 +44,9 @@ body {
       color: #fff;
       cursor: pointer;
       transition: background 0.35s ease-in-out;
-      background: url("d4-frame-l.png"), url("d4-frame-r.png"),
-        url("d4-frame-m.png"), url("d4-navbar-l.png"), url("d4-navbar-r.png"),
-        url("d4-navbar-m.png");
+      background: url("assets/d4-frame-l.png"), url("assets/d4-frame-r.png"),
+        url("assets/d4-frame-m.png"), url("assets/d4-navbar-l.png"),
+        url("assets/d4-navbar-r.png"), url("assets/d4-navbar-m.png");
       background-repeat: no-repeat;
       background-position: left center, right center, center center, 10px center,
         calc(100% - 10px) center, center center;
@@ -54,9 +54,10 @@ body {
         auto calc(100% - 18px), 82% calc(100% - 18px);
 
       &:hover {
-        background: url("d4-frame-l.png"), url("d4-frame-r.png"),
-          url("d4-frame-m.png"), url("d4-navbar-l-hover.png"),
-          url("d4-navbar-r-hover.png"), url("d4-navbar-m-hover.png");
+        background: url("assets/d4-frame-l.png"), url("assets/d4-frame-r.png"),
+          url("assets/d4-frame-m.png"), url("assets/d4-navbar-l-hover.png"),
+          url("assets/d4-navbar-r-hover.png"),
+          url("assets/d4-navbar-m-hover.png");
         background-repeat: no-repeat;
         background-position: left center, right center, center center,
           10px center, calc(100% - 10px) center, center center;
