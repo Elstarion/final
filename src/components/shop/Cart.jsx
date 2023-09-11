@@ -12,6 +12,8 @@ import {
 } from "../../store/cartSlice";
 import { useEffect } from "react";
 
+// import sfsf from "../../assets/jusdoit.png";
+
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -50,7 +52,7 @@ const Cart = () => {
                 <span>Start shopping</span>
               </Link>
             </div>
-            <img src="justdoit.png" alt="justdoit" className={css.justdoit} />
+            <img src="/justdoit.png" alt="justdoit" className={css.justdoit} />
           </div>
         ) : (
           <div>
@@ -65,7 +67,7 @@ const Cart = () => {
               {cart.cartItems?.map((item) => (
                 <div className={css.cart_item} key={item.id}>
                   <div className={css.cart_product}>
-                    <img src={item.image} alt={item.name} />
+                    <img src={`/${item.image}`} alt={item.name} />
                     <div className={css.item_description}>
                       <h3>{item.name}</h3>
                       <button onClick={() => handleRemoveFromCart(item)}>
