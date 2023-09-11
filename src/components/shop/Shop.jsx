@@ -1,6 +1,5 @@
 import css from "./Shop.module.scss";
 import ShopNavbar from "./ShopNavbar";
-// import { products } from "../products.json";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/cartSlice";
 import products from "../products";
