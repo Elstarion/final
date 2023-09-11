@@ -44,9 +44,9 @@ body {
       color: #fff;
       cursor: pointer;
       transition: background 0.35s ease-in-out;
-      background: url("assets/d4-frame-l.png"), url("assets/d4-frame-r.png"),
-        url("assets/d4-frame-m.png"), url("assets/d4-navbar-l.png"),
-        url("assets/d4-navbar-r.png"), url("assets/d4-navbar-m.png");
+      background: url("assets/d4-frame-l.png"), url("./d4-frame-r.png"),
+        url("./d4-frame-m.png"), url("./d4-navbar-l.png"),
+        url("./d4-navbar-r.png"), url("./d4-navbar-m.png");
       background-repeat: no-repeat;
       background-position: left center, right center, center center, 10px center,
         calc(100% - 10px) center, center center;
