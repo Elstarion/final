@@ -67,7 +67,7 @@ const Cart = () => {
               {cart.cartItems?.map((item) => (
                 <div className={css.cart_item} key={item.id}>
                   <div className={css.cart_product}>
-                    <img src={`fina/shop/${item.image}`} alt={item.name} />
+                    <img src={`/final/shop/${item.image}`} alt={item.name} />
                     <div className={css.item_description}>
                       <h3>{item.name}</h3>
                       <button onClick={() => handleRemoveFromCart(item)}>
