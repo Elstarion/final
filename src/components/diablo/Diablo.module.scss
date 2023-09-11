@@ -55,12 +55,11 @@ body {
         auto calc(100% - 18px), 82% calc(100% - 18px);
 
       &:hover {
-        background: url("../../assets/assets/d4-frame-l.png"),
-          url("../../assets/assets/d4-frame-r.png"),
-          url("../../assets/assets/d4-frame-m.png"),
+        background: url("../../assets/d4-frame-l.png"),
+          url("../../assets/d4-frame-r.png"), url("../../assets/d4-frame-m.png"),
           url("../../assets/d4-navbar-l-hover.png"),
-          url("../../assets/assets/d4-navbar-r-hover.png"),
-          url("../../assets/assets/d4-navbar-m-hover.png");
+          url("../../assets/d4-navbar-r-hover.png"),
+          url("../../assets/d4-navbar-m-hover.png");
         background-repeat: no-repeat;
         background-position: left center, right center, center center,
           10px center, calc(100% - 10px) center, center center;
@@ -153,9 +152,9 @@ body {
     display: flex;
     height: 70px;
     width: 9.125em;
-    background: url("d4-button-l.png") left center no-repeat,
-      url("d4-button-m.png") center center no-repeat,
-      url("d4-button-r.png") right center no-repeat;
+    background: url("../../assets/d4-button-l.png") left center no-repeat,
+      url("../../assets/d4-button-m.png") center center no-repeat,
+      url("../../assets/d4-button-r.png") right center no-repeat;
     background-size: auto, auto, auto;
     justify-content: center;
     align-items: center;
@@ -172,9 +171,10 @@ body {
     }
 
     &:hover {
-      background: url("d4-button-l-hover.png") left center no-repeat,
-        url("d4-button-m-hover.png") center center no-repeat,
-        url("d4-button-r-hover.png") right center no-repeat;
+      background: url("../../assets/d4-button-l-hover.png") left center
+          no-repeat,
+        url("../../assets/d4-button-m-hover.png") center center no-repeat,
+        url("../../assets/d4-button-r-hover.png") right center no-repeat;
 
       @include break(576px) {
         background-size: 40px 70px, 90px 70px, 40px 70px;
