@@ -75,7 +75,7 @@
     {
       "id": 13,
       "name": "Papyrus Blank Thank You Card",
-      "image": "/src/assets/13.png",
+      "image": "src/assets/13.png",
       "price": 10.99
     }
   ]
